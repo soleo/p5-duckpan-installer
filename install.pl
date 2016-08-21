@@ -156,7 +156,7 @@ if ( eval { system('cpanm Crypt::SSLeay') } ) {
 
 cpanminus_install_error() if (system('cpanm --notest Starman'));
 
-cpanminus_install_error() if (system('cpanm App::DuckPAN --mirror http://www.cpan.org/ --mirror http://duckpan.org'));
+cpanminus_install_error() if (system('cpanm --notest App::DuckPAN --mirror http://www.cpan.org/ --mirror http://duckpan.org'));
 
 print_text(
     "Installing DDG...",
